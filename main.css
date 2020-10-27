@@ -1,0 +1,209 @@
+.wrap{
+  overflow: hidden;
+}
+
+body{
+  table-layout: fixed;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+span{
+  font-family: 'Vollkorn', serif;
+}
+
+/*　ナビバー　*/
+header{
+  z-index: 9999;
+  font-family: 'Vollkorn', serif;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+}
+
+/*　トップ欄　*/
+#top-wrapper{
+  height: auto;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  padding-left: auto;
+  padding-right: auto;
+  background-image: url(./images/toppage.jpeg);
+  background-size: cover;
+}
+
+.top-top{
+   color: white;
+   font-family: 'Vollkorn', serif;
+}
+
+.top-top h1{
+  font-size: 120px;
+}
+
+.top-top h2{
+  font-size: 50px;
+}
+
+/*　サイズごとにロゴの大きさを変える　*/
+@media(max-width: 500px){
+  .top-top h1{
+    font-size: 80px;
+  }
+
+  .top-top h2{
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 300px){
+  .top-top h1{
+    font-size: 40px;
+  }
+
+  .top-top h2{
+    font-size: 20px;
+  }
+}
+
+.next-btn{
+  padding: 100px;
+  font-size: 20px;
+}
+
+/*　自己紹介欄　*/
+#about-wrapper{
+  height: auto;
+  background-color: #FFFFFF;
+  background-size: cover;
+}
+
+.about-icon img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.aboutMe{
+  text-align: left;
+}
+
+.aboutMe-li{
+  padding-bottom: 10px;
+}
+
+/*　仕事内容欄　*/
+#works-wrapper{
+  background-color: #77FFFF;
+  background-size: cover;
+}
+
+.works-about h3{
+  padding-top: 20px;
+  font-weight: 800;
+}
+
+.works-about p{
+  padding-bottom: 30px;
+}
+
+/*　制作実績欄　*/
+#portfolio-wrapper{
+  background-color: #FFFFFF;
+  background-size: cover;
+  height: 500px;
+}
+
+.portfolio-web{
+  padding-bottom: 30px;
+}
+
+/*　お問い合わせ欄　*/
+#contact-wrapper{
+  background-color: #EEEEEE;
+  background-size: cover;
+}
+
+.contact-p{
+  padding-top: 10px;
+}
+
+.copyright{
+  padding-bottom: 3px;
+}
+
+.contact-icon{
+  display: inline-block;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+.contact-icon:hover{
+ opacity: 1.0;
+}
+
+/*Twitter*/
+.fa-twitter{
+  color:#1da1f2;
+}
+
+/*github*/
+.fa-github{
+  color: #000000;
+}
+
+/* 見出しのデザイン */
+.heading{
+  padding: 100px 100px;
+}
+
+.heading h3, .contact-top h3{
+  color: #FF773E;
+  font-weight: 800;
+  font-size: 25px;
+  font-family: 'Vollkorn', serif;
+  line-height: 0.5em;
+}
+
+.heading h1, .contact-top h1{
+  font-weight: 800;
+  font-size: 40px;
+}
+
+.contact-top{
+  padding-top: 50px;
+}
+
+/* トップに戻るボタン */
+.back-to-top{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: #BAD3FF;
+  color: #005FFF;
+  opacity: 0.6;
+  font-size: 30px;
+}
+
+@media(max-width: 300px){
+  .back-to-top{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: none;
+    width: 35px;
+    height: 35px;
+    background-color: #BAD3FF;
+    color: #005FFF;
+    opacity: 0.6;
+    font-size: 20px;
+  }
+}
+
+.back-to-top:hover {
+  opacity: 1.0;
+}
