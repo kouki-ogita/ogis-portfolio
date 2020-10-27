@@ -70,19 +70,19 @@ $('.works-next').on('click', () =>{
  * -------------------
  */
  
- /*　戻るボタンの表示・非表示　*/
- const updateButton = () => {
+/*　戻るボタンの表示・非表示　*/
+const updateButton = () => {
   if ($(window).scrollTop() >= 300) {
     $('.back-to-top').fadeIn();
   } else {
     $('.back-to-top').fadeOut();
   }
- };
+};
  
- $(window).on('scroll', updateButton);
+$(window).on('scroll', updateButton);
  
- /*　押したらトップに戻る　*/
- $('.back-to-top').on('click', (e) => {
+/*　押したらトップに戻る　*/
+$('.back-to-top').on('click', (e) => {
   e.preventDefault();
   $('html, body').animate({ scrollTop: 0 }, 600);
 });
